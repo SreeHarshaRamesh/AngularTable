@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>Custom Plunker</title>  
+        
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/sandstone/bootstrap.min.css">
+        <script src="lib/angular.min.js"></script>
+        
+        <script src="lib/underscore-min.js"></script>
+        
+
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body ng-controller="MyCtrl">
+        
+<!--<div ng-repeat="(key, value) in groupedLeads">
+  <h2>{{key}}</h2> -->
+<table class="table table-bordered table-striped">
+  
+  <thead>
+        <tr>
+          <th ng-repeat="colName in colNames">{{colName}}</th>
+        </tr>
+      </thead>
+  <tbody>
+   <tr ng-repeat="lead in leads">
+    <td rowspan="3"></td>>{{ lead.date }}</td>
+    <td>{{ lead.inventory }}</td>
+    <td>{{ lead.model }}</td>
+    <td>{{ lead.City }}</td>
+    <td>{{ lead.total_leads }}</td>
+    <td>{{ lead.total_sales }}</td>
+    <td>{{ lead.total_cash }}</td>
+    <td>{{ lead.discount }}</td>
+  </tr>
+  </tbody>
+  
+</table>
+<!-- <li ng-repeat="lead in value">
+    Lead: {{ lead }} 
+  </li>-->
+
+  <!-- </div>-->
+    </body>
+</html>
